@@ -1,0 +1,1213 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font-family: "Roboto", "Verdana", sans-serif;
+    background: #f6f7fb;
+    font-size: var(--body2-fontSize);
+}
+p{
+    font-family: "Roboto", "Verdana", sans-serif;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+   .container {
+    width: 100%;
+     padding-top: 0;
+    padding-right: 8.143%;
+    padding-bottom: 0;
+    padding-left: 8.143%;
+    box-sizing: border-box;
+}
+.header-top {
+    margin-top: 14px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+    padding: 0;
+}
+
+
+.top-right-ul { margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end;}
+.top-right-ul li { list-style: none; border-left: solid 1px #ccc; padding-left: 2%; margin-left: 2%; display: flex; align-items: center;}
+
+.f-ic{
+    background: #076bcf;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.f-ic img{ display: inline-block;}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn.register {
+    background: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+    background-color: #2a3a8d;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border: none;
+    font-size: 12px;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.17;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.btn.login {
+    background: transparent;
+    color: #2a3a8d;
+    border-radius: 4px;
+    border: solid 1px #2a3a8d;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.17;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    height: 30px;
+}
+
+.language-sel{ width: 100px; border: none; outline: none;}
+
+.header_topright {
+    float: right;
+    margin-top: 22px;
+    margin-right: 0;
+    margin-bottom: 22px;
+    margin-left: 0;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
+    height: 30px;
+}
+
+
+
+.desktop.block-views-blockour-service-block-1{
+    background-color: #eeeff6;
+   
+    padding: 0 16px 1px 16px;
+}
+
+  .desktop.block-views-blockour-service-block-1 .block-title {
+    padding: 24px 0 16px 0  ;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.38px;
+}
+ h2.block-title:after {
+    content: "";
+    display: block;
+    padding-top: 4px;
+    width: 58px;
+    border-radius: 4px;
+    background-color: #076bcf;
+    margin-top: 3px;
+}
+
+.scroll-div{ width: 100%;  height: 526px;   overflow-x: auto;;}
+.scroll-div ul{margin: 0; padding: 0;}
+.scroll-div ul li{ list-style: none; width: 100%; padding: 15px; background: #fff; border-bottom: 1px solid rgba(42,58,141,0.18);}
+.scroll-div ul li a{ display: flex; align-items: center; flex-wrap: wrap; font-size: 15px; text-decoration: none; font-size: 14px; font-weight: 600; line-height: 1.14; color: rgba(0,0,0,0.87);}
+.scroll-div ul li a .icn-box-01{ width: 50px;}
+.scroll-div ul li a .link-txt-box-01{ width: calc(100% - 50px);}
+.icn-box-01 img{ width: 50px; height: 34px; padding-right: 16px;}
+
+
+.swiper-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .swiper-slide {
+ 
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+ 
+  }
+ 
+ .slider-boz-01 .swiper-slide{ background: #fff;}
+.swipper-container .swiper-pagination{ position: unset; width: auto; margin-right: 10px;}
+.swipper-container{  display: flex;}
+.swipper-container .swiper-pagination-bullet{ margin-left: 5px; margin-right: 5px;}
+
+.block-title{font-size: 24px; padding: 24px 0 16px !important; font-weight: 600;
+    margin-top: 20px;}
+  h2.block-title:after {
+        content: "";
+        display: block;
+        padding-top: 4px;
+        width: 58px;
+        border-radius: 4px;
+        background-color: #076bcf;
+        margin-top: 3px;
+    }
+
+    a {
+        color: #076bcf;
+        text-decoration: none;
+        font-weight: 500;
+     }
+    .more-link a{font-weight: 600;}
+
+.lable-box{
+    border-radius: 4px;
+    border: solid 1px rgba(8,117,226,0.18);
+    padding: 1px 8px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #086ED4;
+    background-color: #EBF4FD;
+
+}
+
+.lable-txt{
+    font-size: 14px; margin-right: 10px; color: rgba(0,0,0,0.6);
+}
+.bot-txt-01{     padding-top: 4px; color: #076bcf;
+    font-size: 12px; }
+    .bot-txt-01 span{ color: #000; }
+
+
+.para-box p{ margin-bottom: 3px;}
+.lable-box-2{
+ 
+    border-radius: 4px;
+    border: solid 1px rgba(33,135,55,0.18);
+    padding: 1px 8px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #1F7F34;
+    background-color: #F2F8F4;
+}
+
+
+
+:root {
+    --ag-gridheading: #f6f7fb;
+    --no-recordtext: rgba(0, 0, 0, 0.87);
+    --uploading-file-label: rgba(0, 0, 0, 0.6);
+    --first-color: #f6f7fb;
+    --secondary-color: #076bcf;
+    --primary-text: rgba(0, 0, 0, 0.87);
+    --secondary-text: rgba(0, 0, 0, 0.6);
+    --panel-color: #fff;
+    --panel-indicator: rgba(0, 0, 0, 0.54);
+    --field-bg: #ffffff;
+    --error-bg: #cd2026;
+    --disabled-input: rgba(0, 0, 0, 0.05);
+    --checkbox-bordercolor: rgba(0, 0, 0, 0.5);
+    --heading1-fontSize: 2.25rem;
+    --heading2-fontSize: 2rem;
+    --heading3-fontSize: 1.875rem;
+    --heading4-fontSize: 1.5rem;
+    --heading5-fontSize: 1.25rem;
+    --heading6-fontSize: 1.125rem;
+    --heading7-fontSize: 1.375rem;
+    --body1-fontSize: 1rem;
+    --body2-fontSize: 0.875rem;
+    --body3-fontSize: 0.75rem;
+    --header-color: white;
+    --cerulean-blue: #0875e2;
+    --dusk-blue: #2a3a8d;
+    --horizontal-top-border: rgba(0, 0, 0, 0.1);
+    --primary-button-borderhover: rgba(0, 0, 0, 0.2);
+    --secondary-button-hover: rgba(0, 0, 0, 0.2);
+    --alice-blue: #ebf4fd;
+    --selago-blue: #f5fafe;
+    --hawkes-blue: #ebf4fd;
+    --science-blue: #076bcf;
+    --saltpan-color: #f2f8f4;
+    --white-linen: #fbf4f1;
+    --wisp-pink: #fef2f3;
+    --concrete-color: #f2f2f2;
+    --black-18: rgba(0, 0, 0, 0.18);
+    --black-24: rgba(0, 0, 0, 0.24);
+    --black-38: rgba(0, 0, 0, 0.38);
+    --forest-green: #1f7f34;
+    --brick-orange: #bc460b;
+    --whisper-color: #eeeff6;
+    --bay-many: rgba(42, 58, 141, 0.18);
+    --dusker-blue: rgba(255, 255, 255, 0.18);
+    --amber-color: #fbbd08;
+    --early-dawn: #fffaeb;
+    --pastel-green: #6edd80;
+    --feta-color: #f4fdf5;
+    --geraldine-color: #f7888c;
+    --chablis-color: #fff6f6;
+    --carnation-color: #f6655a;
+    --french-rose: #ed477f;
+    --amethyst-color: #ae4ebe;
+    --fuchsia-blue: #825ec4;
+    --blue-marguerite: #6270c2;
+    --picton-blue1: #49a9f5;
+    --picton-blue2: #30b9f6;
+    --scooter-blue: #2ec8dc;
+    --jungle-green: #2ea99e;
+    --fern-color: #6cbe70;
+    --wild-willow: #a0ce6b;
+    --wattle-color: #d6e25d;
+    --gorse-color: #ffef5e;
+    --sunglow-color: #ffcc34;
+    --sunshade-color: #ffab2e;
+    --coral-color: #ff754a;
+    --almond-frost: #917469;
+    --silver-chalice: #b0b0b0;
+    --regent-gray: #7d95a0;
+    --navbar-item-color: #ffffff;
+    --navbar-bg: #2a3a8d;
+    --link-color: #076bcf;
+    --secondary-button-bg: #ffffff;
+    --secondary-button-hover-bg: #223074;
+    --secondary-button-text: #2a3a8d;
+    --secondary-button-border: #2a3a8d;
+    --primary-button-bg: #2a3a8d;
+    --primary-button-text: #ffffff;
+    --primary-button-border: #2a3a8d;
+    --primary-button-hover: #223074;
+    --tertiary-button-text: #2a3a8d;
+    --tertiary-button-hover: rgba(42, 58, 141, 0.08);
+    --header-background: #ffffff;
+    --footer-unlogged-bg: #1a2038;
+    --footer-bg: #eeeff6;
+    --menu-first-level-bg: #ffffff;
+    --menu-second-level-bg: #f2f3f8;
+    --menu-border-bottom: #f6f7fb;
+    --header-icons-border-right: rgba(0, 0, 0, 0.18);
+    --error-colour-bg: #fef2f3;
+    --text-color: rgba(0, 0, 0, 0.6);
+    --mat-card-header: #efeff9;
+    --mat-tab: rgba(0, 0, 0, 0.6);
+    --mat-tab-hover: #0875e2;
+    --mat-tab-hover-background: #ebf4fd;
+    --modal-close-icon: rgba(0, 0, 0);
+    --modal-border-bottom: #dee2e6;
+    --menu-hover: #ebf4fd;
+    --accordion-secondary-text: rgba(0, 0, 0, 0.6);
+    --primary-button-disabled-bg: rgba(0, 0, 0, 0.18);
+    --primary-button-disabled-text: rgba(0, 0, 0, 0.24);
+    --primary-button-disabled-color: rgba(0, 0, 0, 0.24);
+    --secondary-button-text: #2a3a8d;
+    --secondary-button-border: #2a3a8d;
+    --secondary-button-hover-bg: rgba(42, 58, 141, 0.08);
+    --secondary-button-disabled-color: rgba(0, 0, 0, 0.18);
+    --tertiary-button-background-color: rgba(0, 0, 0, 0.18);
+    --error-color-text: #cd2026;
+    --warning-color-text: #bc460b;
+    --success-color-text: #1f7f34;
+    --warning-color-bg: #fbf4f1;
+    --success-color-bg: #edf6ef;
+    --light-background: #fafbfd;
+    --focus-outline: rgba(7, 107, 207, 0.6);
+    --error-color-border: rgba(205, 32, 38, 0.18);
+    --warning-color-border: rgba(188, 70, 11, 0.18);
+    --success-color-border: rgba(33, 135, 55, 0.18);
+    --darkish-green: #1f7f34;
+    --mat-list-item-border-bottom: #d2d5e4;
+    --icon-color: #ffffff;
+    --icon-color-toggle: rgba(0, 0, 0, 0.6);
+    --mat-stepper-disabled-text: rgba(0, 0, 0, 0.38);
+    --calender-bg: #ffffff;
+    --calender-hover-bg: #f2f2f2;
+    --calender-selected-bg: #076bcf;
+    --calender-text: rgba(0, 0, 0, 0.87);
+    --calender-not-selected-bg: rgba(0, 0, 0, 0.04);
+    --calender-today-border: rgba(0, 0, 0, 0.38);
+    --calender-day-text: rgba(0, 0, 0, 0.38);
+    --calender-month-hover: #000;
+    --calender-current-month: rgba(0, 0, 0, 0.54);
+    --cornflower-blue: #ebf4fd;
+    --card-header-bg: rgba(42, 58, 141, 0.06);
+    --acord-border: rgba(42, 58, 141, 0.6);
+    --icon-hover-color: rgba(242, 242, 242, 0.6);
+    --toast-bg-color: #333333;
+    --toast-text-color: #ffffff;
+    --instrction-screen: #f6f7fb;
+    --scrollbarBgColor: #d8dbea;
+    --scrollBarColor: rgba(0,0,0,0.6);
+    --scrollBarBorder: #d8dbea;
+    --calendar_date_disabled: rgba(0, 0, 0, 0.38);
+    --sessionTimerBg: #e9ebf3;
+    --tool-tip-background-color: #666666;
+    --secondary-title-bg: #f4f5f9;
+    --toggle-hover-bg: rgba(8, 117, 226, 0.08);
+    --border-bottom: rgba(42,58,141,0.18);
+    --secondary-button-focus: rgba(8, 117, 226, 0.6);
+    --option-colour: rgba(0,0,0,0.87);
+    --modal-footer-bg: #eeeff6;
+    --tooltip-text: #ffffff;
+    --child-tbl-bg: #ebf4fd;
+    --success-card-content: #383838;
+    --table-bg: #ffffff;
+    --table-header-bg: #eeeff6;
+    --mult_table-header-bg: #f4f5f9;
+    --table-header-text: rgba(0, 0, 0, 0.87);
+    --td-hover-bg: #f2f2f2;
+    --td-active-bg: #ebf4fd;
+    --input-group-bg: rgba(0, 0, 0, 0.05);
+    --info-color-bg: #ebf4fd;
+    --info-color-text: rgba(0, 0, 0, 0.87);
+    --info-color-border: rgba(7, 107, 207, 0.18);
+    --disabled-input-text: rgba(0, 0, 0, 0.6);
+    --disabled-input-border: rgba(0, 0, 0, 0.18);
+    --hr-line: rgba(42, 58, 141, 0.18);
+    --total-bg: #ebf5ff;
+    --total-border: rgba(8, 117, 226, 0.18);
+    --accord-border: rgba(42, 58, 141, 0.6);
+    --disabled-input-bg: rgba(0,0,0,0.05);
+    --helpIcon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/help_ic.svg);
+    --trashIcon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/trashIcon.svg);
+    --trashIcon_hover: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/trashIcon_hover.svg);
+    --breadcrumb_arrow_icon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/breadcrumb_arrow.svg);
+    --next_icon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/Next.svg);
+    --acc_down_icon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/acord_hide_arrow.svg);
+    --personal_information: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/personal_information.svg);
+    --gross_total_income: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/gross_total_income.svg);
+    --total_deductions: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/total_deductions.svg);
+    --disclosures: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/disclosures.svg);
+    --tax_paid: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/tax_paid.svg);
+    --total_tax_liability: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/total_tax_liability.svg);
+    --details_of_investment: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/details_of_investment.svg);
+    --InfoIcon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/Info.svg);
+    --add_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/add_ic.svg);
+    --edit_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/edit_ic.svg);
+    --edit_ic_dis: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/edit_ic_dis.svg);
+    --delete_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/delete_ic.svg);
+    --delete_ic_dis: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/delete_ic_dis.svg);
+    --remove_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/remove_ic.svg);
+    --remove_ic_dis: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/remove_ic_dis.svg);
+    --next_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/next_ic.svg);
+    --next_ic_dis: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/next_ic_dis.svg);
+    --previous_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/previous_ic.svg);
+    --warning_s_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/warning_s_ic.svg);
+    --success_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/success.svg);
+    --warning_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/warning.svg);
+    --error_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/error.svg);
+    --success_ic_big: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/success_ic_big.svg);
+    --warning_ic_big: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/warning_ic_big.svg);
+    --error_ic_big: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/error_ic_big.svg);
+    --logo: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/logo.svg);
+    --logo_s: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/logo_s.svg);
+    --filter_list: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/filter_list.svg);
+    --filter_list_active: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/filter_list_active.svg);
+    --search_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/search_ic.svg);
+    --pancard_s: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/pancard_s.svg);
+    --aadhaar_s: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/aadhaar_s.svg);
+    --external_s: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/external_s.svg);
+    --attachment_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/attachment_ic.svg);
+    --json_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/json_ic.svg);
+    --otp_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/otp_ic.svg);
+    --eye_close: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/eye_close.svg);
+    --eye_open: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/eye_open.svg);
+    --downloadIcon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/downloadIcon.svg);
+    --line_right_arrow: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/line_right_arrow.png);
+    --line_right_active_arrow: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/line_right_active_arrow.png);
+    --line_right_active1_arrow: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/line_right_active1_arrow.png);
+    --pancard_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/pancard.svg);
+    --InfoIcon_18: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/Info_18.svg);
+    --PrintIcon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/print_ic.svg);
+    --show_arrow: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/show_arrow.svg);
+    --hide_arrow: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/hide_arrow.svg);
+    --video_help: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/video_help.png);
+    --act_icon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/act_icon.svg);
+    --extranalLink: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/extranal_link.svg);
+    --filter_list_active: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/filter_list_active.svg);
+    --tick_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/tick_ic.svg);
+    --try_another_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/try_another.svg);
+    --efiling_otp_ic: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/efiling_otp.svg);
+    --add_icg: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/add_icg.svg);
+    --acc_down_icon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/acord_hide_arrow.svg);
+    --uploadIcon: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/upload.svg);
+    --calender: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/calender.svg);
+    --calender_active: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/calender_active.svg);
+    --dd-round-arrow: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/round-arrow.svg);
+    --dd-round-arrow-select: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/round-arrow-select.svg);
+    --dd-round-arrow-disabled: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/round-arrow-disabled.svg);
+    --PrintIconw: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/print_w_ic.svg);
+    --page_for_left_arrow_disable: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_for_left_arrow_disable.svg);
+    --page_for_left_arrow_hilight: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_for_left_arrow_hilight.svg);
+    --page_for_right_arrow_disable: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_for_right_arrow_disable.svg);
+    --page_for_right_arrow_hilight: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_for_right_arrow_hilight.svg);
+    --page_left_arrow_disable: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_left_arrow_disable.svg);
+    --page_left_arrow_hilight: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_left_arrow_hilight.svg);
+    --page_right_arrow_disable: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_right_arrow_disable.svg);
+    --page_right_arrow_hilight: url(https://static.incometax.gov.in/iec/foservices/assets/images/icons/page_right_arrow_hilight.svg);
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+
+.flow-ul-01{ margin: 0; display: flex; flex-wrap: wrap; padding: 0; padding-bottom: 25px;}
+
+.flow-ul-01 > :last-child .arrow-line{ display: none; }
+
+.icn-box{ border: solid 1px #ccc; color: #ccc; width: 34px; height: 34px;  border-radius: 3px; display: inline-flex; align-items: center; justify-content: center;}
+.green-box{  background: #393;   }
+.flow-ul-01 li{ list-style: none; width: 20%;}
+.flow-ul-01 li p{ margin-bottom: 0; font-weight: 400; font-size: 14px; line-height: 17px; color: #ccc;}
+.flow-ul-01 li p.active{ color: #000;}
+.arrow-line{ background: #ccc; width: calc(100% - 34px); height: 2px;   position: relative;}
+.arrow-green{  background: #1F7F34; }
+ .arrow-line::after{ content: ""; display: block; position: absolute; right: 0; background: #ccc; width: 10px; height: 10px; top: -3px; }
+.arrow-active.arrow-line::after{background: #076bcf;}
+ .title-02 h2{ font-weight: 600; color: #000; margin-bottom: 0; font-size: 30px;}
+.title-03 h4{ font-weight: 500; color: #000; margin-bottom: 0; font-size: 21px;}
+
+.displayContent span{ color: 12px;color: rgba(0, 0, 0, 0.6) }
+.displayContent p{ line-height: 20px;}
+
+.footer-main{ background: #1a2038;}
+
+.footer-main h3{ color: #fff;     font-weight: 500!important; font-size: 18px; margin-bottom: 15px; }
+.footer-link{ margin: 0; padding: 0;}
+.footer-link li{ list-style: none; margin-bottom: 5px;}
+.footer-link li a{ color: #c1c5f2; font-size: 14px; font-weight: 400;}
+.follow-us-ul{ display: flex;  margin: 0 5px; padding: 0;}
+.follow-us-ul li{ list-style: none; padding: 5px }
+.follow-us-ul li a{ display: inline-flex; height: 38px; padding: 10px 8.1px 10.7px 9px; border: 1px solid grey; width: 38px; align-items: center; justify-content: center; border-radius: 5px; }
+.social-block{ margin-bottom: 10px; display: flex; flex-wrap: wrap; align-items: center; padding-top: 15px; padding-bottom: 15px; border-bottom: solid 1px #fff ;}
+.social-block h4{  color: #fff; font-size: 20px;}
+.copy-text p{ color: #cbc9ff; font-size: 12px; text-align: right; margin-bottom: 5px;}
+.table-ul{ margin: 0; padding: 0;}
+.table-ul li{ list-style: none; width: 100%; border-bottom: solid 1px #ccc; padding-top: 10px; padding-bottom:10px;}
+.total-ul li{ border-bottom: none; font-weight: 500; padding-bottom: 0;}
+
+
+.largeButton.iconBefore{
+padding: 0 24px 0 42px;
+background-position: 20px center;
+background-size: 22px 22px;
+}
+
+.largeButton {
+    font-family: 'Roboto-Medium', Verdana, Sans-serif;
+    font-size: 1rem;
+    font-size: var(--body1-fontSize);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.31;
+    border-radius: 4px;
+    padding: 0 24px 0;
+    min-height: 46px;
+    min-width: 98px;
+    outline: none;
+}
+
+.previousIcon {
+    background: url(../images/previousIconSecondary.svg) no-repeat;
+}
+
+.secondaryButton {
+    color: #2a3a8d;
+    color: var(--secondary-button-text);
+    border: solid 1px #2a3a8d;
+    border: solid 1px var(--secondary-button-border);
+    background-color: transparent;
+}
+
+.largeButton {
+    font-family: 'Roboto-Medium', Verdana, Sans-serif;
+    font-size: 1rem;
+    font-size: var(--body1-fontSize);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.31;
+    border-radius: 4px;
+    padding: 0 24px 0;
+    min-height: 46px;
+    min-width: 98px;
+    line-height:46px;
+}
+.primaryButton {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    background-color: #2a3a8d;
+    background-color: var(--primary-button-bg);
+    color: #ffffff;
+    color: var(--primary-button-text);
+    border: none;
+}
+
+.but-group{ display: flex; margin: 0 -5px;}
+.but-group li{ list-style: none; padding: 5px;}
+.p-b-margin p{margin-bottom: 3px;}
+.but-group li{ margin-left: 10px;}
+
+.search-input{ width: 100%; display: flex; height: 45px; border: none;}
+.search-box-01 input{ width: calc(100% - 20px);}
+.search-box-01 input:focus{ outline: none; border: none; }
+.search-icn-block{ width: 20px;}
+.search-box-01{ display: flex; align-items: center; border: solid 1px #ccc;}
+.txt-block-01a span{ font-size: 13px; display: block; font-weight: 400;}
+.txt-block-01a p{ font-weight: 500;     font-size: 0.9rem;}
+.form-check-input{ border: solid 1px #8e8e8e;}
+
+
+button:disabled{ color: #797979;}
+
+.but-group li {padding: 0;}
+.breadcrumb li, .breadcrumb li a{font-size: 13px;}
+
+.active-status .icn-box{ border: solid 2px #076bcf; color: #000;}
+.active-status .arrow-line{     background: #076bcf;}
+.active-status p{ color: #000 !important;}
+
+
+.success-status .icn-box{ border: solid 2px #393; color: #fff; background: #393;}
+.success-status .arrow-line{ background: #393;}
+.success-status p{ color: #000 !important;}
+.filter-select { width: 50px; padding: 0; border: none;}
+.pagination-block p{ margin: 0;}
+.next-pre-ul{ margin: 0; padding: 0; display: flex; align-items: center;}
+.next-pre-ul li{ list-style: none; margin-left: 10px; margin-right: 10px; }
+.asterisk {
+    color: var(--error-color-text);
+    margin-left: 4px;
+}
+
+.border-dark{ border-color: #b9b9b9 !important;}
+.h-45{ height: 45px !important; min-height: unset !important;}
+.flow-2{ padding-left: 5%;}
+
+.flow-2 .flow-ul-01{ width: 50%; border: solid 1px rgba(42, 58, 141, 0.18) !important; background-color: #ebf4fd !important;}
+
+.flow-2 .icn-box{ width: 28px; height: 28px;}
+.flow-2 .arrow-line{    width: calc(100% - 28px);}
+.payment-tab  .nav-pills{ border-bottom: solid 1px #ccc;}
+
+.payment-tab .nav-pills .nav-link.active{ background: transparent; color: #076bcf; border-bottom: solid 1px #076bcf; border-radius: 0;}
+
+.payment-tab  .nav-link{color: #000;}
+
+.w-32{ width: 32px;}
+
+
+.bank-list{ display: flex; flex-wrap: wrap; padding: 0; margin: 0 -5px;}
+.bank-list li{ width: 20%; list-style: none; padding: 5px; margin-bottom: 5px;}
+.radio-box{ margin: 0; padding: 0; display: flex;}
+.radio-box li{ list-style: none; padding-right: 5%;}
+
+.title-03 h5{ font-size: 16px;  font-weight: 500; margin-bottom: 25px;}
+
+.but-block{ background-color: var(--concrete-color);}
+.proceed:disabled {
+    background-color: rgba(0, 0, 0, 0.18);
+    background-color: var(--primary-button-disabled-bg);
+    color: rgba(0, 0, 0, 0.24);
+    color: var(--primary-button-disabled-color);
+    border: none;
+}
+
+.min-h{min-height: 200px;}
+
+
+.largervf.proceed{ border-radius: 4px;
+    height: 30px;
+    border: solid 1px var(--science-blue);
+    color: var(--science-blue);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 12px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+    background-color: transparent;
+    line-height:30px;
+}
+
+.border{border-color: #c4c4c4 !important;}
+
+
+.form-select{    border-color: #c4c4c4 !important;}
+
+
+.bank-list-2 li{ width: 33%; cursor: pointer;}
+
+.bank-list li, .bank-list label {cursor: pointer;}
+
+.bg-blue-box{    background: #edf6ef; display: inline-block;
+    padding: 10px;}
+
+    .mat-card {
+        border: 1px solid rgba(42, 58, 141, 0.18);
+        border: 1px solid var(--bay-many);
+    }
+    
+.otp-ul{ margin: 0; padding: 0; display: flex;}
+.otp-ul li{ list-style: none; padding: 0px 7px;}
+.otp-ul li input{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #c5c5c5;
+    text-align: center;
+    font-size: 32px;
+}
+
+.nav-block{background-color: #29398d !important;}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .nav-link:focus, .nav-link:hover, .nav-link{color: #fff;}
+
+
+.but-search{     background-color: #076bcf;}
+
+
+
+.mob-toggle-block{ display: none;}
+
+
+.marq-txt{
+font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #bc460b;
+    padding: 12px;
+    margin-bottom: 0;
+}
+.marq{
+    border-radius: 4px;
+    cursor: pointer;
+    border: solid 1px rgba(188,70,11,0.18);
+    background-color: #fbf4f1;
+    margin-bottom: 15px;
+}
+
+.mob-show{ display: none;}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+   @media only screen and (max-width: 991px) {
+    .mob-toggle-block{ display: block;}
+    .header-top{ display: flex; flex-wrap: wrap; }
+    .header-top .region-header-top{ margin-right: auto; }
+    .navbar-toggler-icon{color: #000;}
+    .navbar-nav a{text-align: left; padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; font-size: 15px;}
+    .nav-block .container { padding-left: 4%; padding-right: 4%;}
+   }
+
+   @media only screen and (min-width: 992px) {
+
+    .navbar-nav > li{
+        padding-right: 8%;
+    }
+    
+   }
+
+ 
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{font-size: 0.7rem;}
+    .txt-block-01a p{    font-size: 0.7rem;}
+    .title-02 h2{    font-size: 20px;}
+    .flow-ul-01 li{ width: 33%;}
+    .flow-ul-01 li p{ font-size: 11px; line-height: 13px;}
+    .icn-box{ width: 27px; height: 27px}
+    .arrow-line{ width: calc(100% - 27px);}
+    .form-select{ font-size: 0.7rem;}
+    .w-25{ width: 100% !important;}
+    .title-03 h5{font-size: 14px;}
+    .but-group{width: 100%; padding: 0;}
+    .mob-w-100{width: 100%;}
+    .mob-w-100 li{ width: 50%;}
+    .flow-2 .icn-box{width: 22px;
+        height: 22px;}
+
+      .bank-list li{ width: 100%;}
+      .radio-box li{ width: 100%; margin-bottom: 8px;}
+      .radio-box{flex-wrap: wrap;}
+      .w-75{ width: 100% !important;}
+      .flow-2 .flow-ul-01{width: 100%;}
+      .title-style-02 h2{    font-size: 19px;}
+      .customHeader .navbar{ padding: 0;}
+      .navbar-collapse{ padding-top: 25px; padding-bottom: 25px;}
+      .language-sel{    width: 88px;}
+      .top-right-ul .btn.register{ padding-left: 9px; padding-right: 9px;}
+      .header_topright{ margin-top: 5px; margin-bottom: 5px;}
+      .mob-hide{ display: none !important;}
+      .mob-show{ display: inline-block;}
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+ 
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.tab-view-block .nav-pills .nav-link.active{
+ background: transparent; border-bottom: solid 1px #076bcf !important; color: #076bcf !important;
+}
+
+.tab-view-block .nav-pills .nav-link{ color: rgba(0,0,0,0.6); border-radius: 0 !important; }
+.tab-view-block .nav-pills{    border-bottom: solid 1px rgba(42,58,141,0.18);}
+.main-content .thumbnail img{    width: 90px;
+    height: 61px;
+    border-radius: 7%;}
+
+    .txt-box-01{ width: calc(100% - 120px);}
+    .thumb-box-01{ width:120px;}
+
+    svg.ext {
+        width: 20px !important;
+        height: 16px !important;
+        fill: rgba(255,255,255,0.7);
+        padding: 0;
+        font-weight: 900;
+        padding-left: 4px;
+    }
+
+    svg.ext path, svg.mailto path {
+        stroke: #727272;
+        stroke-width: 3;
+    }
+
+    .txt-box-01  a{     font-size: 16px;
+        color: rgba(0,0,0,0.87); text-decoration: underline;     font-weight: 500;}
+
+        .gray-bg{ background: #eeeff6;}
+        .light-gray-bg{ background: #f6f7fb;}
+
+
+        .title-style-02 h2{ font-size: 24px; font-weight: 600;}
+        .title-style-02 p{ color: rgba(0,0,0,0.6); line-height: 1.31; font-size: 14px;}
+
+        h2.block-title.line-fls:after{ display: none !important; } 
+        h2.block-title.line-fls{margin-bottom: 0;}
+
+        .pagination2{ position: unset;}
+
+        .header_top{padding-top:10px;padding-bottom:10px;}
+        .header_top p{line-height:normal;}
+        .logo a{display:block;}
+
+
+
+
+ 
+ 
