@@ -254,7 +254,7 @@
                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                               </div>
                               <div class="txt-block-01a">
-                                 <p>ther than Company Deductee – Income Tax (Other than Companies) (0021)</p>
+                                 <p>other than Company Deductee – Income Tax (Other than Companies) (0021)</p>
                               </div>
                            </div>
                            <div class="col-md-12 d-flex">
@@ -272,40 +272,7 @@
                            <div class="w-100 mt-3  text-end">
                               <p><span _ngcontent-gwb-c46="" class="asterisk">*&nbsp;</span> Indicates the mandatory fields </p>
                            </div>
-                           <div class="w-100 border  mb-3">
-                              <div class="row p-2 p-md-4" >
-                                 <div class="col-md-6 ms-auto d-flex justify-content-end align-items-center">
-                                    <div class="search-box-01   px-3">
-                                       <input placeholder="Search by Description" type="text" class="search-input">
-                                       <span class="search-icn-block">
-                                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
-                                          </svg>
-                                       </span>
-                                    </div>
-                                    <div class="ps-3">
-                                       <i class="fa-light fa-bars-filter">
-                                          <svg id="Component_1" data-name="Component 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                             <defs>
-                                                <style>
-                                                   .cls-1 {
-                                                   fill: none;
-                                                   }
-                                                   .cls-2 {
-                                                   fill: rgba(0, 0, 0, 0.6);
-                                                   }
-                                                </style>
-                                             </defs>
-                                             <rect id="Rectangle_4086" data-name="Rectangle 4086" class="cls-1" width="24" height="24"/>
-                                             <path id="Path_17490" data-name="Path 17490" class="cls-2" d="M11,18h2a1,1,0,0,0,0-2H11a1,1,0,0,0,0,2ZM3,7A1,1,0,0,0,4,8H20a1,1,0,0,0,0-2H4A1,1,0,0,0,3,7Zm4,6H17a1,1,0,0,0,0-2H7a1,1,0,0,0,0,2Z" style="fill:rgba(0, 0, 0, 0.6)"/>
-                                          </svg>
-                                       </i>
-                                       Filter
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+ 
                            <div class="w-100 border p-0  mb-3">
                               <ul class="table-ul">
                                  <li class="px-3">
@@ -334,7 +301,7 @@
                                        <div class="col-md-6 d-flex">
                                           <div class="txt-block-01a">
                                              <p>
-                                                (a) Tax
+                                                (b) Surcharge
                                              </p>
                                           </div>
                                        </div>
@@ -355,7 +322,7 @@
                                        <div class="col-md-6 d-flex">
                                           <div class="txt-block-01a">
                                              <p>
-                                                (a) Tax
+                                                (c) Cess
                                              </p>
                                           </div>
                                        </div>
@@ -376,7 +343,7 @@
                                        <div class="col-md-6 d-flex">
                                           <div class="txt-block-01a">
                                              <p>
-                                                (a) Tax
+                                                (d) Interest
                                              </p>
                                           </div>
                                        </div>
@@ -397,7 +364,28 @@
                                        <div class="col-md-6 d-flex">
                                           <div class="txt-block-01a">
                                              <p>
-                                                (a) Tax
+                                                (e) Penalty
+                                             </p>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2 text-end ms-auto">
+                                          <div class="txt-block-01a">
+                                             <div class="input-group mb-3">
+                                                <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
+                                                <div class="form-floating">
+                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="px-3">
+                                    <div class="row">
+                                       <div class="col-md-6 d-flex">
+                                          <div class="txt-block-01a">
+                                             <p>
+                                                (f) Fee under section 234E
                                              </p>
                                           </div>
                                        </div>
@@ -428,6 +416,7 @@
                                     </div>
                                  </li>
                               </ul>
+                              <!--
                               <div class="w-100 pagination-block">
                                  <div class="row py-4 px-3">
                                     <div class="col-md-6 d-flex align-items-center mb-3">
@@ -458,7 +447,7 @@
                                        </ul>
                                     </div>
                                  </div>
-                              </div>
+                              </div>-->
                            </div>
                            <div class="w-100 d-flex flex-wrap p-4 mb-3">
                               <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay06.html"> Back </a>

@@ -24,17 +24,10 @@
                <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"> -->
                <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
             </head>
-            <body>
+            <body style="background: #f5f7fb;">
                <!--[if lt IE 8]>
                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
                <![endif]-->
-
-               <div class="header_top bg-danger">
-                  <div class="container">
-                      <p class="text-center text-white mb-0">This is a Simulation software for educational purpose.</p>
-                  </div>
-              </div>
-              
                <header>
                   <div class="container customHeader">
                      <div class="row">
@@ -55,7 +48,22 @@
                            <ul class="top-right-ul">
                               <li>
                                  <svg class="img-responsive callusicon dropdown" height="13.5" src="/sites/default/files/2020-02/call-us.svg" style="" viewBox="0 0 13.5 13.5" width="13.5" xmlns="http://www.w3.org/2000/svg"><defs><style type="text/css">
-                                    <!--/*-->
+                                    <!--/*-->/* &gt;&lt;!--*/
+                                    
+                                    &lt;!--/*--&gt;&lt;![CDATA[/* &gt;&lt;!--*/
+                                    
+                                    &lt;!--/*--&gt;&lt;![CDATA[/* &gt;&lt;!--*/
+                                    .cls-1 {
+                                    
+                                                  fill: rgba(0, 0, 0, 0.6);
+                                    
+                                                }
+                                    
+                                    /*--&gt;&lt;!]]]]&gt;&lt;![CDATA[&gt;*/
+                                    
+                                    /*--&gt;&lt;!]]&gt;*/
+                                    
+                                    /*--&gt;&lt;!*/
                                     </style></defs><path class="cls-1" d="M5.715,8.842a11.361,11.361,0,0,0,4.943,4.943l1.65-1.65a.746.746,0,0,1,.765-.18,8.555,8.555,0,0,0,2.677.427.752.752,0,0,1,.75.75V15.75a.752.752,0,0,1-.75.75A12.749,12.749,0,0,1,3,3.748.752.752,0,0,1,3.75,3H6.375a.752.752,0,0,1,.75.75,8.52,8.52,0,0,0,.427,2.677.753.753,0,0,1-.187.765Z" data-name="Path 6681" id="Path_6681" style="fill: rgb(102, 102, 102);" transform="translate(-3 -3)"></path></svg>
                                     Call Us
                               </li>
@@ -212,141 +220,200 @@
                </header>
                <section>
                   <div class="container customHeader">
+                     <div class="w-100">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">e-Pay Tax</li>
+                        </ol>
+                        </nav>
+                     </div>
                      <div class="row">
                         <div class="col-md-8 ">
                            <ul class="flow-ul-01 w-100">
-                              <li>
-                                 <div class="w-100 d-flex flex-wrap align-items-center mb-3"><span class="icn-box active-box ">1</span> <span class="arrow-line arrow-active "></span></div>
-                                 <p>Add Nature Of <br>Payment Details</p>
+                              <li class="success-status">
+                                 <div class="w-100 d-flex flex-wrap align-items-center mb-3"><span class="icn-box active-box ">1</span> <span class="arrow-line"></span></div>
+                                 <p  >Add Nature Of <br>Payment Details</p>
                               </li>
-                              <li>
+                              <li class="success-status">
                                  <div class="w-100 d-flex flex-wrap align-items-center mb-3"><span class="icn-box">2</span> <span class="arrow-line"></span></div>
                                  <p>Add Tax Break up <br>Details</p>
                               </li>
-                              <li>
+                              <li class="success-status">
                                  <div class="w-100 d-flex flex-wrap align-items-center mb-3"><span class="icn-box">3</span> <span class="arrow-line"></span></div>
                                  <p>Add Payment<br> Details
                                  </p>
                               </li>
                            </ul>
+                           <div class="w-100 flow-2 mb-3">
+                              <ul class="flow-ul-01 p-3">
+                                 <li class="success-status w-50">
+                                    <div class="w-100 d-flex flex-wrap align-items-center mb-3"><span class="icn-box active-box ">1</span> <span class="arrow-line"></span></div>
+                                    <p  >Select Payment <br>Mode</p>
+                                 </li>
+                                 <li class="success-status  w-50">
+                                    <div class="w-100 d-flex flex-wrap align-items-center mb-3"><span class="icn-box">2</span> <span class="arrow-line"></span></div>
+                                    <p>Preview And Make <br>Payment</p>
+                                 </li>
+                              </ul>
+                           </div>
                         </div>
                      </div>
+
                      <div class="w-100">
-                        <div class="title-02">
-                           <h2>New Payment </h2>
-                           <p>TAN : CHNI02903F </p>
+                        <div class="bg-blue-box p-b-margin w-100 mat-card successful-message p-2 p-md-4">
+                           <div class="row">
+                              <div class="col-md-9 d-flex align-items-start">
+                           <img src="images/successIconRound24.svg" class="me-2">
+                           <h3>The Challan Payment is successful!<br>
+                              <p> You can download the challan receipt by clicking Download.
+                           </p></h3>
                         </div>
+                        <div class="col-md-3 d-flex align-items-center justify-content-end">
+                           <button _ngcontent-yta-c53="" class="largeButton primaryButton ml-16 ng-star-inserted" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                            </svg> Download </button>
+                        </div>
+                        </div>
+                           
+                        </div>
+                     </div>
+                     
+                     <div class="w-100 mt-3  ">
                         <div class="title-03 mb-3">
-                           <h4>Preview <span class="float-right"><a href="" class="edit_btn"><i><img src="images/edit_IC.png" alt="edit"></i>Edit</a></span></h4>
+                           <h4>Summary</h4>
                         </div>
+                        
                      </div>
-                     <div class="w-100">
+
+
+                     <div class="w-100 mt-3  p-md-3 p-2 border bg-white mb-3">
+                        <div class="title-03 mb-3">
+                           <h4>Taxpayer Details</h4>
+                        </div>
                         <div class="row">
-                           <div class="w-100 border p-4 mb-3 white-box">
-                              <div class="title-03 mb-3">
-                                 <h4>Payment Details
-                                 </h4>
-                              </div>
-                              <div class="row">
-                                 <div class="col-md-3 displayContent">
-                                    <span>Assessment Year</span>
-                                    <p class="mb-0">2024-25</p>
-                                    <span>Payment Mode</span>
-                                    <p>Pay at Bank Counter</p>
-                                 </div>
-                                 <div class="col-md-3 displayContent">
-                                    <span>Financial Year</span>
-                                    <p>2023-24</p>
-                                 </div>
-                                 <div class="col-md-3 displayContent">
-                                    <span>Tax Applicable (Major Head)</span>
-                                    <p>Corporation Tax (0020)</p>
-                                 </div>
-                                 <div class="col-md-3 displayContent">
-                                    <span>Type of Payment (Major Head)</span>
-                                    <p>TDS/TCS Payable by Taxpayer (200)</p>
-                                 </div>
-                              </div>
-                              <div class="row">
-                                 <div class="col-md-3 displayContent">
-                                    <span>Payment Throught</span>
-                                    <p>Cash</p>
-                                 </div>
-                                 <div class="col-md-3 displayContent">
-                                    <span>Bank Name</span>
-                                    <p>State Bank of India</p>
-                                 </div>
-                                 <div class="col-md-3 displayContent">
-                                    <span>Nature of Payment</span>
-                                    <p>6CL</p>
-                                 </div>
-                              </div>
+                           <div class="col-md-3 displayContent">
+                              <span>TAN</span>
+                              <p>DELV25452A</p>
                            </div>
-                           <div class="w-100 border p-4 mb-3 white-box">
-                              <div class="title-03 mb-3">
-                                 <h4>Tax Break up Details</h4>
-                              </div>
-                              <div class="w-100">
-                                 <ul class="table-ul">
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> (a) Tax </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 10,000 </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> (b) Surcharge </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> (c) Cess </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> (c) Penalty </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> (c) Fee Under Section 234E </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
-                                       </div>
-                                    </li>
-                                 </ul>
-                                 <ul class="table-ul total-ul">
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> Total (a + b + c + d + e + f)</div>
-                                          <div class="col-4 alignRight card-label-text2 text-end">₹ 1,0000</div>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <div class="row">
-                                          <div  class="col-8 card-label-text2 ng-star-inserted"> In words </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end">Rupees One Thousand Only </div>
-                                       </div>
-                                    </li>
-                                    </li>
-                                 </ul>
-                              </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Name</span>
+                              <p>Vivek awasthi </p>
                            </div>
-                           <div class="w-100 d-flex flex-wrap p-4 mb-3">
-                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href=""> Back </a>
-                              <div class="d-flex ms-auto mob-w-100 mt-2 mt-md-0">
-                                 <ul class="but-group">
-                                    <!--<li><a _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button"> Pay Later </a></li>-->
-                                    <li><a _ngcontent-yta-c53="" class="largeButton primaryButton ml-16 ng-star-inserted" type="button"> Continue </a></li>
-                                 </ul>
-                              </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Assessment Year
+                              </span>
+                              <p>2023-25
+                              </p>
+                           </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Financial Year</span>
+                              <p>2023-24</p>
+                           </div>
+                           </div>
+                           <div class="row">
+                          
+ 
+                           <div class="col-md-3 displayContent">
+                              <span>Tax Applicable (Major Head)</span>
+                              <p>Income Tax (Other than Companies)
+                                 (0021)
+                                 </p>
+                           </div>
+ 
+                           <div class="row">
+                           <div class="col-md-3 displayContent">
+                              <span>Type of Payment (Minor Head)
+                              </span>
+                              <p>TDS/TCS Payable by Taxpayer (200)
+                              </p>
+                           </div>
+
+                           <div class="col-md-3 displayContent">
+                              <span>Amountin(₹)</span>
+                              <p>₹ 646</p>
+                           </div>
+
+
+                           <div class="col-md-3 displayContent">
+                              <span>Amount(in worsd)
+                              </span>
+                              <p>Rupees Four Hundred and Sixty Four Only
+                              </p>
                            </div>
                         </div>
+
+                        </div>
                      </div>
+
+                     <div class="w-100 mt-3  p-md-3 p-2 border bg-white mb-3">
+                        <div class="title-03 mb-3">
+                           <h4>Payment Details
+                           </h4>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-3 displayContent">
+                              <span>CIN</span>
+                              <p>23100700382313HDFC</p>
+                           </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Payment Gateway
+                              </span>
+                              <p>HDFC Bank
+                              </p>
+                           </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Payment Mode
+                              </span>
+                              <p>UPI</p>
+                           </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Bank Name/Card Type
+                              </span>
+                              <p>8368741773307@paytm
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <div class="col-md-3 displayContent">
+                              <span>Bank Reference NUmber
+                              </span>
+                              <p>P23280000004097
+                              </p>
+                           </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Date of Payment
+                              </span>
+                              <p>07-Oct-2023
+                              </p>
+                           </div>
+                           <div class="col-md-3 displayContent">
+                              <span>Nature of Payment
+                              </span>
+                              <p>94C</p>
+                           </div>
+
+                        </div>
+                     </div>
+
+
+
+
+                     <div class="w-100  ">
+                         
+                        <div class="w-100 d-flex flex-wrap  mb-3">
+                           <button _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button"> Back </button>
+                           <div class="d-flex ms-auto mob-w-100 mt-2 mt-md-0">
+                              <ul class="but-group">
+                                 <li><button _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button">Make Another Parment </button></li>
+                                 <li><button _ngcontent-yta-c53="" class="largeButton primaryButton ml-16 ng-star-inserted" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                                  </svg> Download </button></li>
+                              </ul>
+                           </div>
+                        </div></div>
                   </div>
                </section>
                <footer class="footer-main pt-5">
@@ -428,7 +495,7 @@
                   </div>
                </footer>
                <script src="js/jquery.min.js"></script>
-               <script src="js/bootstrap.min.js"   ></script>
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
                <script src="js/main.js"></script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             </body>
