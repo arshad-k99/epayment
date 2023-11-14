@@ -323,7 +323,7 @@
                                  <p>Can’t find your bank? This net banking mode is for Authorized banks only. For other banks please use Payment Gateway or RTGS/NEFT option.</p>
                               </div>
                               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                 <p>Taxpayers having bank account with an Authorised Bank can use this mode for payment. No transaction charge/fee is applicable for making tax payment through this mode.
+                                 <p>Taxpayers having Debit card issued by an Authorised Bank (Offering this mode) can use this mode for payment. No transaction charge/fee is applicable for making tax payment through this mode.
                                  </p>
                                  <div class="w-100">
                                     <ul class="bank-list">
