@@ -233,7 +233,7 @@
                               <div class="row mt-4">
                                  <div class="col-md-6">
                                     <p>PAN / TAN<br>
-                                       CHNI02903F
+                                       {{$pan_number}}
                                     </p>
                                  </div>
                                  <div class="col-md-6">
@@ -244,7 +244,7 @@
                               </div>
                            </div>
                            <div class="w-100 d-flex flex-wrap py-4 mb-3">
-                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay3.html"> Back </a>
+                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('part1-taxpay3') }}"> Back </a>
                               <a _ngcontent-yta-c53="" class="  ms-auto largeButton secondaryButton ng-star-inserted" type="button" disabled="" href="{{ route('part1-taxpay5') }}"> Continue </a>
                            </div>
                         </div>

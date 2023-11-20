@@ -239,7 +239,7 @@
                      <div class="w-100">
                         <div class="title-02">
                            <h2>New Payment </h2>
-                           <p>TAN : CHNI02903F </p>
+                           <p>TAN : {{$pan_number}} </p>
                         </div>
                         <div class="w-100 p-b-margin mb-4">
                            <p>Type of Payment (Minor Head)</p>
@@ -252,7 +252,7 @@
                               <div class="row p-2 p-md-4">
                                  <div class="col-md-6 ms-auto d-flex justify-content-end align-items-center">
                                     <div class="search-box-01   px-3">
-                                       <input placeholder="Search by Description" type="text" class="search-input">
+                                       <input placeholder="Search by Description" id="search-input" type="text" class="search-input"value="{{ old('query', $query) }}" >
                                        <span class="search-icn-block">
                                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                                              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -287,16 +287,17 @@
                            </div>
                            <div class="w-100 border p-0  mb-3">
                               <ul class="table-ul">
-                                 <li class="px-3">
+                                 @foreach($data as $value)
+                                 <li   class="px-3">
                                     <div class="row">
                                        <div class="col-md-6 d-flex">
                                           <div class="radio me-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input" value="{{$value->id}}" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                           </div>
                                           <div class="txt-block-01a">
                                              <p>
                                                 <span>Description</span>
-                                                Payment to Govt. Employees other than Union Government Employees
+                                                {{$value->Description}}
                                              </p>
                                           </div>
                                        </div>
@@ -304,7 +305,7 @@
                                           <div class="txt-block-01a">
                                              <p>
                                                 <span>Section</span>
-                                                192
+                                                {{$value->Section}}
                                              </p>
                                           </div>
                                        </div>
@@ -312,174 +313,30 @@
                                           <div class="txt-block-01a">
                                              <p>
                                                 <span>Code</span>
-                                                92A
+                                                 {{$value->Code}}
                                              </p>
                                           </div>
                                        </div>
                                     </div>
                                  </li>
-                                 <li class="px-3">
-                                    <div class="row">
-                                       <div class="col-md-6 d-flex">
-                                          <div class="radio me-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                          </div>
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Description</span>
-                                                Payment to Govt. Employees other than Union Government Employees
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-5 col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Section</span>
-                                                192
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-1 text-end col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Code</span>
-                                                92A
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li class="px-3">
-                                    <div class="row">
-                                       <div class="col-md-6 d-flex">
-                                          <div class="radio me-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                          </div>
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Description</span>
-                                                Payment to Govt. Employees other than Union Government Employees
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-5 col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Section</span>
-                                                192
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-1 text-end col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Code</span>
-                                                92A
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li class="px-3">
-                                    <div class="row">
-                                       <div class="col-md-6 d-flex">
-                                          <div class="radio me-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                          </div>
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Description</span>
-                                                Payment to Govt. Employees other than Union Government Employees
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-5 col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Section</span>
-                                                192
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-1 text-end col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Code</span>
-                                                92A
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li class="px-3">
-                                    <div class="row">
-                                       <div class="col-md-6 d-flex">
-                                          <div class="radio me-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                          </div>
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Description</span>
-                                                Payment to Govt. Employees other than Union Government Employees
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-5 col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Section</span>
-                                                192
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-1 text-end col-6">
-                                          <div class="txt-block-01a">
-                                             <p>
-                                                <span>Code</span>
-                                                92A
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </li>
+                                @endforeach
                               </ul>
+                              
                               <div class="w-100 pagination-block">
                                  <div class="row py-4 px-3">
-                                    <div class="col-md-6 d-flex align-items-center mb-3">
-                                       <p>Items per page:</p>
-                                       <select class="form-select filter-select mx-3" aria-label="Default select example">
-                                          <option selected>01</option>
-                                          <option value="1">02</option>
-                                          <option value="2">03</option>
-                                          <option value="3">04</option>
-                                       </select>
-                                       <p>1 - 5 of 62 Items </p>
-                                    </div>
-                                    <div class="col-md-6 text-end d-flex mb-3">
-                                       <ul class="next-pre-ul ms-auto">
-                                          <li>
-                                             <a href="#"><img src="images/firstpageDisableLight.svg"></a>
-                                          </li>
-                                          <li>
-                                             <a href="#"><img src="images/previousPageDisableLight.svg"></a>
-                                          </li>
-                                          <li>1 of 13 pages</li>
-                                          <li>
-                                             <a href="#"><img src="images/nextPageEnableLight.svg"></a>
-                                          </li>
-                                          <li>
-                                             <a href="#"><img src="images/lastePageEnableLight.svg"></a>
-                                          </li>
-                                       </ul>
-                                    </div>
+                                    
+                                    
+                                       {{ $data->render('pagination::bootstrap-5') }}
+
+                                 
                                  </div>
                               </div>
                            </div>
                            <div class="w-100 d-flex flex-wrap p-4 mb-3">
-                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay5.html"> Back </a>
+                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('part1-taxpay5') }}"> Back </a>
                               <div class="d-flex ms-auto">
                                  <ul class="but-group">
-                                    <li><a _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button" disabled href="Part1-Taxpay07.html"> Continue </a></li>
+                                    <li><button _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" id="continueButton" disabled type="button"  > Continue </button></li>
                                  </ul>
                               </div>
                            </div>
@@ -568,6 +425,99 @@
                <script src="js/jquery.min.js"></script>
                <script src="js/bootstrap.min.js"   ></script>
                <script src="js/main.js"></script>
+               <meta name="csrf-token" content="{{ csrf_token() }}">
+
+              
+               <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+               <script>
+
+                  
+                    var typingTimer;
+                      var doneTypingInterval = 500; // in milliseconds
+                      var searchInput = $('#search-input');
+                          var inputValue = searchInput.val();
+
+                      searchInput.keyup(function (event) {
+                          clearTimeout(typingTimer);
+                          typingTimer = setTimeout(function () {
+                              doneTyping(event);
+                          }, doneTypingInterval);
+                      });
+
+                      function doneTyping(event) {
+                          var query = searchInput.val();
+
+                          
+                          event.preventDefault();
+
+                           var scrollPos = searchInput[0].selectionStart;
+
+
+                          
+                          $.ajax({
+                              url: '/part1-taxpay6',
+                              type: 'GET',
+                              data: { query: query },
+                              success: function (datas) {
+                                  
+                                  $('body').html(datas);
+
+                                  searchInput.val(inputValue);
+                                searchInput[0].setSelectionRange(scrollPos, scrollPos);
+                               
+                                  searchInput.focus();
+
+
+                              },
+                              error: function (error) {
+                                  console.error('Error:', error);
+                              }
+                          });
+                      }
+
+                      $(document).ready(function () {
+
+                         $.ajaxSetup({
+                              headers: {
+                                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                              }
+                          });
+
+                          var listItemText
+
+                           $(".table-ul li").click(function () {
+                               listItemText = $(this).find("input").val();
+
+                               
+
+                               $("#continueButton").prop("disabled", false);
+                          });
+
+                            $("#continueButton").click(function() {
+        
+                                 
+                                 $.ajax({
+                                     type: 'POST',
+                                     url: "{{ route('part1-taxpay7') }}",
+                                     data: { data: listItemText },
+                                     success: function(response) {
+                                         window.location.href = "{{ route('part1-taxpay7') }}";
+                                     },
+                                     error: function(error) {
+                                         console.log(error);
+                                         // Handle errors (if needed)
+                                     }
+                                 });
+                            
+                               
+                              });
+
+
+
+                      });
+
+                      
+               </script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             </body>
          </html>

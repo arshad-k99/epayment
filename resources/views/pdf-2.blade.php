@@ -40,7 +40,7 @@
                         <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-left:solid 1px #656565; border-right:solid 1px #656565;  border-top:solid 1px #656565">
                            <tr>
                               <td width="29%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">TAN</td>
-                              <td width="71%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: CHNS01470A </strong></td>
+                              <td width="71%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: {{ isset($data->pan_number) ? $data->pan_number : null }} </strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Name</td>
@@ -48,15 +48,15 @@
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Assessment Year</td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: 2024-25</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>:  {{ isset($data->assessment_year) ? $data->assessment_year : null }}</strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Financial Year </td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: 2023-24</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>:  {{ isset($data->financial_year) ? $data->financial_year : null }}</strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Major Head</td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: Income Tax (Other than Companies) (0021)</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: {{ isset($data->major_head) ? $data->major_head : null }}</strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Minor Head</td>
@@ -68,11 +68,12 @@
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Amount (in Rs.) </td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: ₹ 18,484</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: <span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+ {{ isset($data->total) ? $data->total : 0 }}</strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Amount (in words) </td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: Rupees Eighteen Thousand Four Hundred Eighty Four Only</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: {{ isset($data->total_in_words) ? $data->total_in_words : null }} </strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">CIN</td>
@@ -80,11 +81,11 @@
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Mode of Payment </td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: RTGS/NEFT</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: {{ isset($data->model_of_payment) ? $data->model_of_payment : null }}</strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Bank Name </td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: RBIS</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: {{ isset($data->bank_name) ? $data->bank_name : null }}</strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Bank Reference Number </td>
@@ -92,7 +93,7 @@
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">Date of Deposit </td>
-                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: 06-Oct-2023</strong></td>
+                              <td style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px"><strong>: {{ isset($data->created_at) ? $data->created_at->format('d-M-Y')  : null }} </strong></td>
                            </tr>
                            <tr>
                               <td  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">BSR code</td>
@@ -127,42 +128,49 @@
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">A</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x">Tax</td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong> ₹ 18,484</strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong> <span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->tax) ? $data->tax : 0 }}</strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">B</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x">Surcharge</td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>₹ 0</strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong><span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->surcharge) ? $data->surcharge : 0 }}</strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">C</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x">Cess</td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>₹ 0 </strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong><span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->cess) ? $data->cess : 0 }} </strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">D</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x">Interest</td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>₹ 0 </strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong><span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->interest) ? $data->interest : 0 }}</strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">E</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x">Penalty</td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>₹ 0 </strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong><span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->penalty) ? $data->penalty : 0 }} </strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">F</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x">Fee under section 234E</td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>₹ 0 </strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong><span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->section) ? $data->section : 0 }}</strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">&nbsp;</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x"><strong>Total (A+B+C+D+E+F)</strong></td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>₹ 18,484</strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong><span style="font-family: DejaVu Sans; sans-serif;">&#8377;</span>
+  {{ isset($data->total) ? $data->total : 0 }}</strong></td>
                            </tr>
                            <tr>
                               <td width="16%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px">&nbsp;</td>
                               <td width="19%"  style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10p x"><strong>Total (In Words)</strong></td>
-                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>Rupees Eighteen Thousand Four Hundred  Eighty Four Only</strong></td>
+                              <td width="65%" style="border-bottom:solid 1px #656565; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px" align="right"><strong>{{ isset($data->total_in_words) ? $data->total_in_words : null}}</strong></td>
                            </tr>
                         </table>
                      </td>
