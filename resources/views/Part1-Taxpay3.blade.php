@@ -238,40 +238,40 @@
                                  <div class="col-md-6 d-flex flex-wrap">
                                     <ul class="otp-ul mb-2" id="numberList">
                                        <li>
-                                          <input type="text" maxlength="1" class="number-input">
+                                          <input type="text" value="1" maxlength="1" class="number-input">
                                        </li>
                                        <li>
-                                          <input type="text" maxlength="1" class="number-input">
+                                          <input type="text" value="2" maxlength="1" class="number-input">
                                        </li>
                                        <li>
-                                          <input type="text" maxlength="1" class="number-input">
+                                          <input type="text" value="3" maxlength="1" class="number-input">
                                        </li>
                                        <li>
-                                          <input type="text" maxlength="1" class="number-input">
+                                          <input type="text" value="4" maxlength="1" class="number-input">
                                        </li>
                                        <li>
-                                          <input type="text" maxlength="1" class="number-input">
+                                          <input type="text" value="5" maxlength="1" class="number-input">
                                        </li>
                                        <li>
-                                          <input type="text" maxlength="1" class="number-input">
+                                          <input type="text" value="6"  maxlength="1" class="number-input">
                                        </li>
                                     </ul>
                                  </div>
                               </div>
                               <div class="row">
                                  <div class="col-md-6">
-                                    <p>OTP expires in 14:01 </p>
+                                    OTP expires in <p id="otpTimer" style="display: inline;"></p>  
                                  </div>
                                  <div class="col-md-6 d-flex flex-wrap">
                                     <div class="ms-auto">
-                                       <a  href="#">Resend OTP</a>
+                                       <a href="#" id="resendButton">Resend OTP</a>
                                        <p>3 attempt(s) remaining</p>
                                     </div>
                                  </div>
                               </div>
                            </div>
                            <div class="w-100 d-flex flex-wrap py-4 mb-3">
-                              <a class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay2.blade.php"> Back </a>
+                              <a class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('part1-taxpay2')}}"> Back </a>
                               <button didabled class="  ms-auto largeButton secondaryButton ng-star-inserted" type="button" disabled id="continueButton" href="Part1-Taxpay4.html"> Continue </button>
                            </div>
                         </div>
@@ -361,6 +361,7 @@
                <script src="js/main.js"></script>
                <script>
                    $(document).ready(function() {
+                     enable_submit_button()
                        $('.number-input').on('input', function() {
                            var maxLength = parseInt($(this).attr('maxlength'));
                            var currentLength = $(this).val().length;
@@ -398,6 +399,43 @@
                       
                              window.location.href = "{{ route('part1-taxpay4') }}";
                            });
+
+                        var otpTimer;
+                        var timerValue = 300;
+
+                        function startTimer() {
+                              otpTimer = setInterval(function() {
+                              var minutes = Math.floor(timerValue / 60);
+                              var seconds = timerValue % 60;
+
+                              var formattedTime = 
+                                  (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+                              $('#otpTimer').text(formattedTime);
+
+                              timerValue--;
+
+                             
+                              if (timerValue < 0) {
+                                  clearInterval(otpTimer);
+                                  $('#otpTimer').text('Expired');
+                                  
+                              }
+                          }, 1000);
+                      }
+
+
+
+                        startTimer();
+
+                         $('#resendButton').click(function() {
+                             
+                             timerValue = 300;
+                             clearInterval(otpTimer);
+                             
+                             startTimer();
+                         });
+
                    });
                </script>
 

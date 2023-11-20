@@ -251,7 +251,7 @@
                         <div class="w-100">
                            <div class="col-md-12 d-flex">
                               <div class="radio me-2">
-                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                 <input class="form-check-input" type="radio" value="Income Tax (Other than Companies) (0021)"  name="RadioGroup" id="income-tax">
                               </div>
                               <div class="txt-block-01a">
                                  <p>other than Company Deductee – Income Tax (Other than Companies) (0021)</p>
@@ -259,7 +259,7 @@
                            </div>
                            <div class="col-md-12 d-flex">
                               <div class="radio me-2">
-                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                 <input class="form-check-input" value="Corporation Tax (0020)" type="radio" name="RadioGroup"  id="company-tax">
                               </div>
                               <div class="txt-block-01a">
                                  <p>Company Deductee – Corporation Tax (0020)</p>
@@ -289,7 +289,7 @@
                                              <div class="input-group mb-3">
                                                 <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
                                                 <div class="form-floating">
-                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                   <input type="number" id="tax" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
                                                 </div>
                                              </div>
                                           </div>
@@ -310,7 +310,7 @@
                                              <div class="input-group mb-3">
                                                 <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
                                                 <div class="form-floating">
-                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                   <input id="surcharge" type="number" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
                                                 </div>
                                              </div>
                                           </div>
@@ -331,7 +331,7 @@
                                              <div class="input-group mb-3">
                                                 <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
                                                 <div class="form-floating">
-                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                   <input type="number" id="cess" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
                                                 </div>
                                              </div>
                                           </div>
@@ -352,7 +352,7 @@
                                              <div class="input-group mb-3">
                                                 <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
                                                 <div class="form-floating">
-                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                   <input type="number" id="interest" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
                                                 </div>
                                              </div>
                                           </div>
@@ -373,7 +373,7 @@
                                              <div class="input-group mb-3">
                                                 <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
                                                 <div class="form-floating">
-                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                   <input type="number" id="penalty" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
                                                 </div>
                                              </div>
                                           </div>
@@ -394,7 +394,7 @@
                                              <div class="input-group mb-3">
                                                 <span class="input-group-text align-items-center h-45 d-flex border-dark">₹</span>
                                                 <div class="form-floating">
-                                                   <input type="text" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
+                                                   <input type="number" id="section" class="form-control h-45 border-dark py-2" id="floatingInputGroup1" >
                                                 </div>
                                              </div>
                                           </div>
@@ -406,13 +406,13 @@
                                  <li class="px-3">
                                     <div class="row">
                                        <div class="col-8 card-label-text2 ng-star-inserted"> Total (a + b + c + d + e + f)</div>
-                                       <div class="col-4 alignRight card-label-text2 text-end">₹ 1,000</div>
+                                       <div id="total-amount" class="col-4 alignRight card-label-text2 text-end">0</div>
                                     </div>
                                  </li>
                                  <li class="px-3">
                                     <div class="row">
                                        <div class="col-8 card-label-text2 ng-star-inserted"> In words </div>
-                                       <div class="col-4 alignRight card-label-text2 text-end">Rupees One Thousand Only </div>
+                                       <div id="total-in-words" class="col-4 alignRight card-label-text2 text-end">Zero</div>
                                     </div>
                                  </li>
                               </ul>
@@ -450,10 +450,10 @@
                               </div>-->
                            </div>
                            <div class="w-100 d-flex flex-wrap p-4 mb-3">
-                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay06.html"> Back </a>
+                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('part1-taxpay6') }}"> Back </a>
                               <div class="d-flex ms-auto">
                                  <ul class="but-group">
-                                    <li><a _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button" disabled href="Par1-TAxpay08-a.html"> Continue </a></li>
+                                    <li><button _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button" disabled href="Par1-TAxpay08-a.html" id="continueButton"> Continue </button></li>
                                  </ul>
                               </div>
                            </div>
@@ -542,6 +542,176 @@
                <script src="js/jquery.min.js"></script>
                <script src="js/bootstrap.min.js"   ></script>
                <script src="js/main.js"></script>
+               <meta name="csrf-token" content="{{ csrf_token() }}">              
+               <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+               <script>
+               $(document).ready(function () {
+                  $.ajaxSetup({
+                              headers: {
+                                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                              }
+                          });
+
+                  $(' #tax').on('input', function() {
+                       enable_submit_button()
+                       total()
+                     });
+                  $(' #surcharge').on('input', function() {
+                       
+                       total()
+                     });
+                  $(' #cess').on('input', function() {
+                       
+                       total()
+                     });
+                  $(' #interest').on('input', function() {
+                       
+                       total()
+                     });
+                  $(' #penalty').on('input', function() {
+                       
+                       total()
+                     });
+
+                   $(' #section').on('input', function() {
+                       
+                       total()
+                     });
+                   $(' #income-tax').on('click', function() {
+                       
+                       enable_submit_button()
+                     });
+                   $(' #company-tax').on('click', function() {
+                       
+                       enable_submit_button()
+                     });
+
+                   function total() {
+
+                     var tax = parseFloat($("#tax").val()) || 0;
+                     var surcharge = parseFloat($("#surcharge").val()) || 0;
+                     var cess = parseFloat($("#cess").val()) || 0;
+                     var interest = parseFloat($("#interest").val()) || 0;
+                     var penalty = parseFloat($("#penalty").val()) || 0;
+                     var section = parseFloat($("#section").val()) || 0;
+                     var total = tax + surcharge + cess + interest + penalty + section;
+                     console.log(total)
+
+                     var words = inWords(total)
+               
+                     $("#total-amount").text("₹" + total);
+
+                     $("#total-in-words").text(words );
+
+                     
+
+                  }
+
+                   function enable_submit_button(){
+
+                     var tax = parseFloat($("#tax").val()) || 0;
+
+
+                      if ($("input[name='RadioGroup']:checked").length > 0 && tax > 0) {
+
+                        $("#continueButton").prop("disabled", false);
+
+                      }  else {
+                         $("#continueButton").prop("disabled", true);
+                       }
+
+
+
+                  }
+
+                  $("#continueButton").click(function() {
+
+                     var tax = parseFloat($("#tax").val()) || 0;
+
+                     var surcharge = parseFloat($("#surcharge").val()) || 0;
+                     var cess = parseFloat($("#cess").val()) || 0;
+                     var interest = parseFloat($("#interest").val()) || 0;
+                     var penalty = parseFloat($("#penalty").val()) || 0;
+                     var section = parseFloat($("#section").val()) || 0;
+                     var total = tax + surcharge + cess + interest + penalty + section;
+                     var words = inWords(total)
+
+                     var tax_type
+
+                      if($("#income-tax").is(":checked")){
+
+                        tax_type = $("#income-tax").val();
+
+                     
+
+                      }else if($("#company-tax").is(":checked")){
+
+                        tax_type = $("#company-tax").val();
+
+                      }
+
+                      var data = {
+                            tax: tax,
+                            surcharge: surcharge,
+                            cess: cess,
+                            interest: interest,
+                           penalty: penalty,
+                            section: section,
+                            total: total,
+                            words: words,
+                            tax_type:tax_type,
+
+                        };
+
+                     console.log(data)
+
+                      $.ajax({
+                            type: 'POST',
+                            url: "{{ route('Par1-TAxpay08-a') }}",
+                            data: { data: data },
+                            success: function(response) {
+                                window.location.href = "{{ route('Par1-TAxpay08-a') }}";
+                            },
+                            error: function(error) {
+                                console.log(error);
+                                // Handle errors (if needed)
+                            }
+                        });
+
+                      
+                       //window.location.href = "{{ route('Par1-TAxpay08-a') }}";
+                     });
+
+                  var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+                  var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+                  function inWords (num) {
+                      if ((num = num.toString()).length > 9) return 'overflow';
+                      n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+                      if (!n) return; var str = '';
+                      str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+                      str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+                      str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+                      str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+                      str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'Only ' : '';
+                      return str;
+                  }
+
+                  function convertNumberToWords(number) {
+                     var wordsArray = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+
+                     var result = number
+                         .toString()
+                         .split('')
+                         .map(function (digit) {
+                             return wordsArray[parseInt(digit)];
+                         })
+                         .join(' ');
+
+                     return result;
+                 }
+               });
+               </script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             </body>
          </html>

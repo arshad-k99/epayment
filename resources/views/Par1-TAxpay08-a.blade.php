@@ -261,19 +261,19 @@
                         <div class="w-100 p-4 border payment-tab">
                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                               <li class="nav-item" role="presentation">
-                                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Net Banking</button>
+                                 <button class="nav-link payment_type active" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" value="Net Banking" id="net_banking">Net Banking</button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Debit Card</button>
+                                 <button class="nav-link payment_type"  data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" value="Debit Card" id="debit_card">Debit Card</button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Pay at Bank Counter</button>
+                                 <button class="nav-link payment_type" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" value="Pay at Bank Counter" id="pay_at_bank_counter">Pay at Bank Counter</button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false"  >RTGS/NEFT</button>
+                                 <button class="nav-link payment_type"  data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false"  value="RTGS/NEFT" id="rtgs_neft" >RTGS/NEFT</button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                 <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#tab5" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false"  >Payment Gateway <img src="images/informationIcon (1).svg"></button>
+                                 <button class="nav-link payment_type" data-bs-toggle="pill" data-bs-target="#tab5" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" value="Payment Gateway"  id="payment_gateway"  >Payment Gateway <img src="images/informationIcon (1).svg"></button>
                               </li>
                            </ul>
                            <div class="tab-content" id="pills-tabContent">
@@ -284,37 +284,37 @@
                                     <ul class="bank-list">
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input net_banking" value="Canara Bank"  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/canaraBank.png">  Canara Bank 
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input net_banking" value="ICICI Bank"  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/iciciBank.png">  ICICI Bank 
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input net_banking" value="Indian Bank" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/inidianBank.png">Indian Bank
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input net_banking" value="Punjab National Bank" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/pnbBank.png">  Punjab National Bank
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input net_banking" value="State Bank Of India" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/sbiBank.png">  State Bank Of India
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input net_banking" value="Other Bank"  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              Other Bank
                                           </div>
                                        </li>
@@ -329,37 +329,37 @@
                                     <ul class="bank-list">
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input debit_card" value="Canara Bank" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/canaraBank.png">  Canara Bank 
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input debit_card" value="ICICI Bank" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/iciciBank.png">  ICICI Bank 
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input debit_card" value="Indian Bank" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/inidianBank.png">Indian Bank
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input debit_card" value="Punjab National Bank"  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/pnbBank.png">  Punjab National Bank
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input debit_card" value="State Bank Of India" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              <img class="w-32" src="images/sbiBank.png">  State Bank Of India
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <input class="form-check-input debit_card"  value="Other Bank" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                              Other Bank
                                           </div>
                                        </li>
@@ -384,29 +384,31 @@
                                  <div class="paymentTypeDivision"><span _ngcontent-yta-c47="" class="body2">Payment Through </span><span _ngcontent-yta-c47="" class="asterisk">*&nbsp;</span></div>
                                  <ul class="radio-box mb-4">
                                     <li>
-                                       <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+                                       <input class="form-check-input pay_at_bank_counter" value="Cash" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
                                        Cash<img src="images/informationIcon.svg">
                                     </li>
                                     <li>
-                                       <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+                                       <input class="form-check-input pay_at_bank_counter" value="Cheque" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
                                        Cheque
                                     </li>
                                     <li>
-                                       <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+                                       <input class="form-check-input pay_at_bank_counter" value="Demand Draft" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
                                        Demand Draft
                                     </li>
                                     <li>
-                                       <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
+                                       <input class="form-check-input pay_at_bank_counter" value="Internal Transfer(applicable only for RBI)" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" >
                                        Internal Transfer(applicable only for RBI)
                                     </li>
                                  </ul>
                                  <div class="paymentTypeDivision"><span _ngcontent-yta-c47="" class="body2">Select Bank (authorised Banks only) </span><span _ngcontent-yta-c47="" class="asterisk">*&nbsp;</span></div>
                                  <div class="w-25 mb-4">
-                                    <select class="form-select" aria-label="Default select example">
-                                       <option selected>Open this select menu</option>
-                                       <option value="1">One</option>
-                                       <option value="2">Two</option>
-                                       <option value="3">Three</option>
+                                    <select  class="form-select" id="pay_at_bank_select" aria-label="Default select example">
+                                       <option value="" selected>Open this select menu</option>
+                                       <option value="Canara Bank"> Canara Bank </option>
+                                       <option value="ICICI Bank">ICICI Bank</option>
+                                       <option value="Indian Bank">Indian Bank</option>
+                                       <option value="Punjab National Bank">Punjab National Bank</option>
+                                       
                                     </select>
                                  </div>
                                  <div class="w-100">
@@ -433,37 +435,37 @@
                                     <ul class="bank-list bank-list-2">
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="Canara Bank ">
+                                             <input class="form-check-input payment_gateway" type="radio" name="flexRadioDefault" value="Canara Bank" id="Canara Bank">
                                              <img class="w-32" src="images/canaraBank.png">  <label for="Canara Bank ">Bank</label>  
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="ICICI Bank ">
+                                             <input class="form-check-input payment_gateway" type="radio" name="flexRadioDefault" value="ICICI Bank" id="ICICI Bank ">
                                              <img class="w-32" src="images/iciciBank.png">  <label for="ICICI Bank "> Bank</label> 
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="Indian Bank">
+                                             <input class="form-check-input payment_gateway" type="radio" value="Indian Bank" name="flexRadioDefault" id="Indian Bank">
                                              <img class="w-32" src="images/inidianBank.png"><label for="Indian Bank"> Bank</label>
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="National Bank">
+                                             <input class="form-check-input payment_gateway" type="radio" name="flexRadioDefault" value="National Bank" id="National Bank">
                                              <img class="w-32" src="images/pnbBank.png">  <label for="National Bank"> National Bank</label>
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="Bank Of India">
+                                             <input class="form-check-input payment_gateway" type="radio" name="flexRadioDefault" value="Bank Of India" id="Bank Of India">
                                              <img class="w-32" src="images/sbiBank.png">  <label for="Bank Of India"> Bank Of India</label>
                                           </div>
                                        </li>
                                        <li class="col-md-2">
                                           <div class="w-100 border border-dark p-2">
-                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="other">
+                                             <input class="form-check-input payment_gateway" type="radio" value="Other Bank" name="flexRadioDefault" id="other">
                                              <label for="other"> Bank</label>
                                           </div>
                                        </li>
@@ -473,10 +475,10 @@
                                  
                               </div>
                               <div class="w-100 d-flex flex-wrap p-4 mb-3">
-                                 <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay07.html"> Back </a>
+                                 <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('part1-taxpay7') }}"> Back </a>
                                  <div class="d-flex ms-auto">
                                     <ul class="but-group">
-                                       <li><a _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button" disabled="" href="Part1-Taxpat8-f.html"> Continue </a></li>
+                                       <li><button _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button" disabled="" href="Part1-Taxpat8-f.html" id="continueButton"> Continue </button></li>
                                     </ul>
                                  </div>
                               </div>
@@ -566,6 +568,215 @@
                <script src="js/jquery.min.js"></script>
                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
                <script src="js/main.js"></script>
+
+               <meta name="csrf-token" content="{{ csrf_token() }}">
+
+              
+               <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+               <script>
+
+                  
+                  function check_condtion(tabId){
+
+                     if(tabId== 'net_banking'){
+
+                        console.log($(".net_banking:checked").length)
+
+                        if ($(".net_banking:checked").length > 0) {
+
+                           $("#continueButton").prop("disabled", false);
+                        }else{
+
+                           $("#continueButton").prop("disabled", true);
+
+                        }
+
+
+                     }
+
+                     if(tabId == 'debit_card'){
+
+                        if ($(".debit_card:checked").length > 0) {
+
+                           $("#continueButton").prop("disabled", false);
+                        }else{
+
+                           $("#continueButton").prop("disabled", true);
+
+                        }
+
+                     }
+
+                     if(tabId == 'payment_gateway'){
+
+                        if ($(".payment_gateway:checked").length > 0) {
+
+                           $("#continueButton").prop("disabled", false);
+                        }else{
+
+                           $("#continueButton").prop("disabled", true);
+
+                        }
+
+                     }
+
+                     if(tabId == 'rtgs_neft'){
+
+                        $("#continueButton").prop("disabled", false);
+
+                     }
+
+                     if(tabId == 'pay_at_bank_counter'){
+
+                        console.log($("#pay_at_bank_select").val())
+                         console.log('hello')
+
+                        if ($(".pay_at_bank_counter:checked").length > 0 && $("#pay_at_bank_select").val()) {
+
+                           $("#continueButton").prop("disabled", false);
+
+                        }else{
+
+                           $("#continueButton").prop("disabled", true);
+                        }
+
+                     }
+
+                  }
+
+                  $(".net_banking").click(function() {
+
+                     check_condtion('net_banking')
+
+                  });
+                  $(".debit_card").click(function() {
+
+                     check_condtion('debit_card')
+
+                  });
+                  $(".payment_gateway").click(function() {
+
+                     check_condtion('payment_gateway')
+
+                  });
+
+                  $(".pay_at_bank_counter").click(function() {
+
+                     check_condtion('pay_at_bank_counter')
+
+                  });
+
+                  $("#pay_at_bank_select").change(function() {
+
+                     check_condtion('pay_at_bank_counter')
+
+                  });
+
+                  $(".payment_type").click(function() {
+                   
+                   if ($(this).attr("aria-selected") === "true") {
+                     var tabId = $(this).attr("id");
+
+                      $("#continueButton").prop("disabled", true);
+                     check_condtion(tabId);
+                   }
+                 });
+                 $(document).ready(function () {
+
+                     $(".payment_type[aria-selected='true']").click();
+
+                  });
+
+                 $("#continueButton").click(function() {
+
+                     $.ajaxSetup({
+                              headers: {
+                                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                              }
+                          });
+
+                     var selectedElement = $(".payment_type[aria-selected='true']");
+
+                     var selectedElementId = selectedElement.attr("id");
+
+                     var selectedElementvalue = selectedElement.val();
+
+                     var selectedBankName
+
+                     var paymentThrough
+
+                     if(selectedElementId== 'net_banking'){
+
+                        selectedBankName = $(".net_banking:checked").val();
+
+                        console.log(selectedBankName)
+
+                     }
+
+                     if(selectedElementId == 'debit_card'){
+
+                        selectedBankName = $(".debit_card:checked").val();
+
+                        console.log(selectedBankName)
+                        
+
+                     }
+
+                     if(selectedElementId == 'payment_gateway'){
+
+                        selectedBankName = $(".payment_gateway:checked").val();
+
+                        console.log(selectedBankName)
+
+                     }
+
+                     if(selectedElementId == 'rtgs_neft'){
+
+                        
+
+                     }
+
+                     if(selectedElementId == 'pay_at_bank_counter'){
+
+                        
+
+                        selectedBankName =  $("#pay_at_bank_select").val()
+
+                         paymentThrough = $(".pay_at_bank_counter:checked").val();
+
+                        
+                        
+                     }
+
+
+                  var data = {
+                            bank_name: selectedBankName,
+                            choosed_type: selectedElementvalue,
+                            payment_through: paymentThrough,
+                            
+
+                        };
+
+                      $.ajax({
+                            type: 'POST',
+                            url: "{{ route('Part1-Taxpat8-f') }}",
+                            data: { data: data },
+                            success: function(response) {
+                                window.location.href = "{{ route('Part1-Taxpat8-f') }}";
+                            },
+                            error: function(error) {
+                                console.log(error);
+                                // Handle errors (if needed)
+                            }
+                        });
+
+                   console.log(selectedElementvalue)
+                      
+                   // window.location.href = "{{ route('Part1-Taxpat8-f') }}";
+                  });
+
+               </script>
             </body>
          </html>

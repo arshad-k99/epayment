@@ -269,7 +269,7 @@
                               </row>
                            </div>
                            <div class="w-100 d-flex flex-wrap py-4 mb-3">
-                              <a class="largeButton secondaryButton iconBefore previousIcon" type="button" href="index.html"> Back </a>
+                              <a class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('base') }}"> Back </a>
                               <button class="  ms-auto largeButton secondaryButton ng-star-inserted" type="button" disabled id="continueButton" > Continue </button>
                            </div>
                         </div>
@@ -357,8 +357,18 @@
                <script src="js/jquery.min.js"></script>
                <script src="js/bootstrap.min.js"   ></script>
                <script src="js/main.js"></script>
+
+               <meta name="csrf-token" content="{{ csrf_token() }}">
+
+               <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                <script>
                  $(document).ready(function () {
+
+                     $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
 
                      $('#pan_number').on('blur', function() {
                        check_pan_number();
@@ -453,8 +463,29 @@
 
 
                      $("#continueButton").click(function() {
+
+                        var data = {
+                            mobile_number: $("#mobile_number").val(),
+                            pan_number: $("#pan_number").val(),
+
+                        };
+
+                        $.ajax({
+                            type: 'POST',
+                            url: "{{ route('part1-taxpay3') }}",
+                            data: { data: data },
+                            success: function(response) {
+                                window.location.href = "{{ route('part1-taxpay3') }}";
+                            },
+                            error: function(error) {
+                                console.log(error);
+                                // Handle errors (if needed)
+                            }
+                        });
+
+                        console.log(data)
                       
-                       window.location.href = "{{ route('part1-taxpay3') }}";
+                       //window.location.href = "{{ route('part1-taxpay3') }}";
                      });
 
 

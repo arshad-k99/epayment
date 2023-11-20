@@ -234,7 +234,7 @@
                      <div class="w-100">
                         <div class="title-02">
                            <h2>New Payment </h2>
-                           <p>TAN : CHNI02903F </p>
+                           <p>TAN : {{ isset($data['pan_number']) ? $data['pan_number'] : null }} </p>
                         </div>
                         <div class="title-03 mb-3">
                            <h4>Preview <span class="float-right"><a href="" class="edit_btn"><i><img src="images/edit_IC.png" alt="edit"></i>Edit</a></span></h4>
@@ -252,7 +252,7 @@
                                     <span>Assessment Year</span>
                                     <p class="mb-0">2024-25</p>
                                     <span>Payment Mode</span>
-                                    <p>Pay at Bank Counter</p>
+                                    <p>{{ isset($data['choosed_type']) ? $data['choosed_type'] : null }}</p>
                                  </div>
                                  <div class="col-md-3 displayContent">
                                     <span>Financial Year</span>
@@ -260,7 +260,7 @@
                                  </div>
                                  <div class="col-md-3 displayContent">
                                     <span>Tax Applicable (Major Head)</span>
-                                    <p>Corporation Tax (0020)</p>
+                                    <p>{{ isset($data['tax_type']) ? $data['tax_type'] : null }}</p>
                                  </div>
                                  <div class="col-md-3 displayContent">
                                     <span>Type of Payment (Major Head)</span>
@@ -270,11 +270,11 @@
                               <div class="row">
                                  <div class="col-md-3 displayContent">
                                     <span>Payment Throught</span>
-                                    <p>Cash</p>
+                                    <p>{{ isset($data['payment_through']) ? $data['payment_through'] : null }}</p>
                                  </div>
                                  <div class="col-md-3 displayContent">
                                     <span>Bank Name</span>
-                                    <p>State Bank of India</p>
+                                    <p>{{ isset($data['bank_name']) ? $data['bank_name'] : null }}</p>
                                  </div>
                                  <div class="col-md-3 displayContent">
                                     <span>Nature of Payment</span>
@@ -291,31 +291,31 @@
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> (a) Tax </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 10,000 </div>
+                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ {{ isset($data['tax']) ? $data['tax'] : 0 }} </div>
                                        </div>
                                     </li>
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> (b) Surcharge </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
+                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ {{ isset($data['surcharge']) ? $data['surcharge'] : 0 }} </div>
                                        </div>
                                     </li>
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> (c) Cess </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
+                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ {{ isset($data['cess']) ? $data['cess'] : 0 }}  </div>
                                        </div>
                                     </li>
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> (c) Penalty </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
+                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ {{ isset($data['penalty']) ? $data['penalty'] : 0 }} </div>
                                        </div>
                                     </li>
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> (c) Fee Under Section 234E </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ 0 </div>
+                                          <div class="col-4 alignRight card-label-text2 text-end"> ₹ {{ isset($data['section']) ? $data['section'] : 0 }}  </div>
                                        </div>
                                     </li>
                                  </ul>
@@ -323,13 +323,13 @@
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> Total (a + b + c + d + e + f)</div>
-                                          <div class="col-4 alignRight card-label-text2 text-end">₹ 1,0000</div>
+                                          <div class="col-4 alignRight card-label-text2 text-end">₹ {{ isset($data['total']) ? $data['total'] : 0 }} </div>
                                        </div>
                                     </li>
                                     <li>
                                        <div class="row">
                                           <div  class="col-8 card-label-text2 ng-star-inserted"> In words </div>
-                                          <div class="col-4 alignRight card-label-text2 text-end">Rupees One Thousand Only </div>
+                                          <div class="col-4 alignRight card-label-text2 text-end"> {{ isset($data['words']) ? $data['words'] : null }} </div>
                                        </div>
                                     </li>
                                     </li>
@@ -337,11 +337,11 @@
                               </div>
                            </div>
                            <div class="w-100 d-flex flex-wrap p-4 mb-3">
-                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href=""> Back </a>
+                              <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{ route('Par1-TAxpay08-a') }}"> Back </a>
                               <div class="d-flex ms-auto mob-w-100 mt-2 mt-md-0">
                                  <ul class="but-group">
                                     <!--<li><a _ngcontent-yta-c53="" class="largeButton secondaryButton ng-star-inserted" type="button"> Pay Later </a></li>-->
-                                    <li><a _ngcontent-yta-c53="" class="largeButton primaryButton ml-16 ng-star-inserted" type="button"> Continue </a></li>
+                                    <li><a _ngcontent-yta-c53="" href="{{ route('payment-submit') }}" class="largeButton primaryButton ml-16 ng-star-inserted" type="button"> Continue </a></li>
                                  </ul>
                               </div>
                            </div>
@@ -430,6 +430,14 @@
                <script src="js/jquery.min.js"></script>
                <script src="js/bootstrap.min.js"   ></script>
                <script src="js/main.js"></script>
+
+                <script>
+               $(document).ready(function () {
+
+               });
+
+
+               </script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             </body>
          </html>

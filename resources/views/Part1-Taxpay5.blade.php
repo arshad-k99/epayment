@@ -220,23 +220,28 @@
                      <div class="w-100">
                         <div class="title-02">
                            <h2>e-Pay Tax</h2>
-                           <p>TAN : CHNI02903F </p>
+                           <p>TAN : {{$pan_number}} </p>
                         </div>
                      </div>
                      <div class="w-100">
                         <div class="w-25">
                            <div _ngcontent-gwb-c38=""><span _ngcontent-gwb-c38="" class="field">Assessment Year</span><span _ngcontent-gwb-c38="" class="asterisk-mandate ml-8">*</span></div>
-                           <select class="form-select" aria-label="Default select example">
-                              <option selected>2023-24</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
+                           <select id="assessment_year" class="form-select" aria-label="Default select example">
+                              <option value="2023-24" selected>2023-24</option>
+                              <option value="2022-23">2022-23</option>
+                              <option value="2021-22">2021-22</option>
+                              <option value="2020-21">2020-21</option>
+                              <option value="2019-20">2019-20</option>
+                              <option value="2018-19">2018-19</option>
+                              <option value="2017-18">2017-18</option>
+                              <option value="2016-17">2016-17</option>
+                              
                            </select>
                         </div>
                         <span class="bg-blue-box mt-3">
                         Financial Year is 2022-23
                         for the selected
-                        Assessment Year 2023-24
+                        Assessment Year <span id="spanText"></span>
                         </span>
                      </div>
                      <div class="w-100 mt-3  text-end">
@@ -253,7 +258,7 @@
                                     <p>Section 192, Section 193, Section 194, Section 194A,Section 194B, Section 194BA, Section…<a href="#">Read More</a></p>
                                  </div>
                                  <div class="but-block px-4 py-2 d-flex flex-wrap justify-content-end">
-                                    <a _ngcontent-gwb-c38="" class="largervf proceed" href="{{ route('part1-taxpay6') }}"> Proceed </a>
+                                    <button _ngcontent-gwb-c38="" class="largervf proceed" id="continueButton"> Proceed </button>
                                  </div>
                               </div>
                            </div>
@@ -273,7 +278,7 @@
                         </div>
                      </div>
                      <div class="w-100 d-flex flex-wrap py-4 mb-3">
-                        <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="Part1-Taxpay4.html"> Back </a>
+                        <a _ngcontent-yta-c53="" class="largeButton secondaryButton iconBefore previousIcon" type="button" href="{{route('part1-taxpay4')}}"> Back </a>
                      </div>
                      <div class="w-100 mb-5">
                         <div class="row">
@@ -370,6 +375,58 @@
                <script src="js/jquery.min.js"></script>
                <script src="js/bootstrap.min.js"   ></script>
                <script src="js/main.js"></script>
+               <meta name="csrf-token" content="{{ csrf_token() }}">
+
+              
+               <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+               <script>
+               $("#assessment_year").change(function() {
+
+                  $("#spanText").text( $(this).val());
+
+
+                  });
+
+               $("#continueButton").click(function() {
+
+                  $.ajaxSetup({
+                              headers: {
+                                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                              }
+                          });
+
+                  var assessment_year = $("#assessment_year").val()
+
+                  var data = {
+                            assessment_year: assessment_year,
+                            financial_year: '2023-24',
+                            
+                        };
+
+                  
+
+                  $.ajax({
+                            type: 'POST',
+                            url: "{{ route('Part1-Taxpay05') }}",
+                            data: { data: data },
+                            success: function(response) {
+                                window.location.href = "{{ route('part1-taxpay6') }}";
+                            },
+                            error: function(error) {
+                                console.log(error);
+                                // Handle errors (if needed)
+                            }
+                        });
+
+
+               });
+
+               $(document).ready(function () {
+
+                   $("#assessment_year").change()
+               });
+
+               </script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             </body>
          </html>
