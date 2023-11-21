@@ -21,6 +21,7 @@
                <link rel="stylesheet" href="css/normalize.min.css">
                <link rel="stylesheet" href="css/bootstrap.min.css">
                <link rel="stylesheet" href="css/main.css">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/fontawesome/css/all.min.css">
@@ -242,17 +243,18 @@
                                  <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">PAN / TAN <span _ngcontent-yta-c30="" class="asterisk">*</span></label>
                                     <input type="text" id="pan_number" class="form-control border"  >
-                                   
-                                        <i class="fas fa-exclamation-triangle" style="color: red;"></i>
 
-                                    <span id="pan_numberError" style="color: red;"></span>
+                                    <div class="error-container" style="margin-top: 8px;">
+                                    <span id="pan_numberError" style="color: red; background-color: #ffd6d6; border-radius: 5px;padding-top: 5px;padding-bottom: 5px;"></span>
+                                 </div>
                                  </div>
                                  <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">Confirm PAN / TAN <span _ngcontent-yta-c30="" class="asterisk">*</span></label>
                                     <input type="text" id="pan_number_confirm" class="form-control border"  >
-                                    <i class="fas fa-exclamation-triangle" style="color: red;"></i>
+                                    <div class="error-container" style="margin-top: 8px;">
 
-                                    <span id="pan_numberconfirmError" style="color: red;"></span>
+                                    <span id="pan_numberconfirmError" style="color: red; background-color: #ffd6d6; border-radius: 5px;padding-top: 5px;padding-bottom: 5px;"></span>
+                                    </div>
                                  </div>
                               </div>
                               <row>
@@ -262,9 +264,9 @@
                                  <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">Mobile <span _ngcontent-yta-c30="" class="asterisk">*</span></label>
                                     <input   id="mobile_number" class="form-control border"  type="text" maxlength="12" pattern="\d{10}" > 
-                                    <i class="fas fa-exclamation-triangle" style="color: red;"></i>
-
-                                    <span id="mobile_numberError" style="color: red;"></span>
+                                    <div class="error-container" style="margin-top: 8px;">
+                                    <span id="mobile_numberError" style="color: red; background-color: #ffd6d6; border-radius: 10px;padding-top: 5px;padding-bottom: 5px;"></span>
+                                 </div>
                                  </div>
                               </row>
                            </div>
@@ -364,6 +366,9 @@
                <script>
                  $(document).ready(function () {
 
+                     var errorIcon = ' &nbsp;<i class="fa fa-exclamation-triangle" style="font-size:12px;color:red"></i>';
+
+
                      $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -391,11 +396,13 @@
 
                         var panRegex = /^([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}?$/;
 
+                         var tanregex = /^([a-zA-Z]){4}([0-9]){5}([a-zA-Z]){1}?$/;
+
                         if (pan_number === null || pan_number === undefined || pan_number.trim() === "") {
                            
-                             pan_numberError.text("PAN/TAN is Mandatory");
-                        }else if (!panRegex.test(pan_number)) {                        
-                           pan_numberError.text("Please enter a valid PAN/TAN");
+                             pan_numberError.html(errorIcon + " Error : PAN/TAN is Mandatory");
+                        }else if ( !panRegex.test(pan_number) && !tanregex.test(pan_number)) {                        
+                           pan_numberError.html(errorIcon + " Error : Please enter a valid PAN/TAN");
                         }else {
                              pan_numberError.text("");
 
@@ -404,6 +411,7 @@
                          }
 
 
+// (!panRegex.test(pan_number))
                     }
                     function check_pan_number_confirm(){
 
@@ -414,13 +422,29 @@
 
                         var pan_numberconfirmError = $("#pan_numberconfirmError");
 
+                        console.log(pan_number)
+
+                        console.log(pan_number)
+
+
+
                         if (pan_number !== pan_number_confirm && (typeof pan_number_confirm !== 'undefined' && pan_number_confirm !== null && pan_number_confirm !== '') ) {
                             
-                             pan_numberconfirmError.text("Please re-enter PAN/TAN to confirm details");
+                             pan_numberconfirmError.html(errorIcon + " Error : Please re-enter PAN/TAN to confirm details");
                         }else{ 
+
+
                              pan_numberconfirmError.text("");
 
-                             return true;
+                             if(typeof pan_number_confirm !== 'undefined' && pan_number_confirm !== null && pan_number_confirm !== ''){
+
+                              return true;
+                             }else{
+
+                              return false;
+                             }
+
+                             
                              
                          }
 
@@ -433,9 +457,9 @@
 
                         if (mobile_number === null || mobile_number === undefined || mobile_number.trim() === "") {
                            
-                             $('#mobile_numberError').text("This is a Mandatory Field");
+                             $('#mobile_numberError').html(errorIcon + " Error : This is a Mandatory Field");
                         } else if (!pattern.test(mobile_number)) {
-                            $('#mobile_numberError').text('Mobile Number should start with 9, 8, 7 or 6.');
+                            $('#mobile_numberError').html(errorIcon + ' Error : Mobile Number should start with 9, 8, 7 or 6.');
                         }else{
                            $('#mobile_numberError').text("");
                            return true;
@@ -488,16 +512,6 @@
                        //window.location.href = "{{ route('part1-taxpay3') }}";
                      });
 
-
-                     
-
-
-                     
-                     console.log('fdd');
-
-                   
-
-                     
                  });
              </script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
