@@ -251,7 +251,7 @@
                      <div class="w-100">
                         <div class="title-02">
                            <h2>New Payment </h2>
-                           <p>TAN : CHNI02903F </p>
+                           <p>TAN : {{$pan_number}} </p>
                         </div>
                      </div>
                      <div class="w-100 mt-3  text-end">

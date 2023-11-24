@@ -61,14 +61,17 @@ Route::get('/part1-taxpay6',[TaxDataController::class, 'getData'])->name('part1-
 
 Route::get('/part1-taxpay7', function () {
     session()->forget(['payment_through', 'choosed_type','bank_name']);
-    return view('Part1-Taxpay07');
+    $pan_number = Session::get('pan_number');
+
+    return view('Part1-Taxpay07', compact('pan_number'));
 })->name('part1-taxpay7');
 
 Route::post('/part1-taxpay7',[TaxDataController::class, 'paymentType'])->name('part1-taxpay7');
 
 Route::get('/Par1-TAxpay08-a', function () {
     session()->forget(['payment_through', 'choosed_type','bank_name']);
-    return view('Par1-TAxpay08-a');
+    $pan_number = Session::get('pan_number');
+    return view('Par1-TAxpay08-a', compact('pan_number'));
 })->name('Par1-TAxpay08-a');
 
 Route::post('/Par1-TAxpay08-a',[TaxDataController::class, 'amountUpdate'])->name('Par1-TAxpay08-a');
