@@ -139,7 +139,6 @@ class TaxDataController extends Controller
 
             $data = TaxPayment::create($dataSet);
 
-            session()->flush();
 
 
         }

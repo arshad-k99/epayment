@@ -239,7 +239,7 @@
                      <div class="w-100">
                         <div class="title-02">
                            <h2>New Payment </h2>
-                           <p>TAN : CHNI02903F </p>
+                           <p>TAN : {{$pan_number}} </p>
                         </div>
                         <div class="w-100 p-b-margin mb-4">
                            <p>Type of Payment (Minor Head)</p>
@@ -249,15 +249,7 @@
                            <p>Tax Applicable (Major Head) </p>
                         </div>
                         <div class="w-100">
-                           <div class="col-md-12 d-flex">
-                              <div class="radio me-2">
-                                 <input class="form-check-input" type="radio" value="Income Tax (Other than Companies) (0021)"  name="RadioGroup" id="income-tax">
-                              </div>
-                              <div class="txt-block-01a">
-                                 <p>other than Company Deductee – Income Tax (Other than Companies) (0021)</p>
-                              </div>
-                           </div>
-                           <div class="col-md-12 d-flex">
+                            <div class="col-md-12 d-flex">
                               <div class="radio me-2">
                                  <input class="form-check-input" value="Corporation Tax (0020)" type="radio" name="RadioGroup"  id="company-tax">
                               </div>
@@ -265,6 +257,15 @@
                                  <p>Company Deductee – Corporation Tax (0020)</p>
                               </div>
                            </div>
+                           <div class="col-md-12 d-flex">
+                              <div class="radio me-2">
+                                 <input class="form-check-input" type="radio" value="Income Tax (Other than Companies) (0021)"  name="RadioGroup" id="income-tax">
+                              </div>
+                              <div class="txt-block-01a">
+                                 <p>Other than Company Deductee – Income Tax (Other than Companies) (0021)</p>
+                              </div>
+                           </div>
+                          
                         </div>
                      </div>
                      <div class="w-100">
@@ -598,6 +599,10 @@
                      console.log(total)
 
                      var words = inWords(total)
+
+                     words = 'Rupess '+words+ ' Only';
+
+                     console.log(words)
                
                      $("#total-amount").text("₹" + total);
 
@@ -635,6 +640,8 @@
                      var section = parseFloat($("#section").val()) || 0;
                      var total = tax + surcharge + cess + interest + penalty + section;
                      var words = inWords(total)
+
+                     words = "Rupess "+words+" Only";
 
                      var tax_type
 
@@ -682,34 +689,22 @@
                        //window.location.href = "{{ route('Par1-TAxpay08-a') }}";
                      });
 
-                  var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
-                  var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+                  var a = ['','One ','Two ','Three ','Four ', 'Five ','Six ','Seven ','Eight ','Nine ','Ten ','Eleven ','Twelve ','Thirteen ','Fourteen ','Fifteen ','Sixteen ','Seventeen ','Eighteen ','Nineteen '];
+                  var b = ['', '', 'Twenty','Thirty','Forty','Fifty', 'Sixty','Seventy','Eighty','Ninety'];
 
                   function inWords (num) {
                       if ((num = num.toString()).length > 9) return 'overflow';
                       n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
                       if (!n) return; var str = '';
-                      str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
-                      str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
-                      str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
-                      str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
-                      str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'Only ' : '';
+                      str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'Crore ' : '';
+                      str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'Lakh ' : '';
+                      str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'Thousand ' : '';
+                      str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'Hundred ' : '';
+                      str += (n[5] != 0) ? ((str != '') ? 'And ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + ' ' : '';
                       return str;
                   }
 
-                  function convertNumberToWords(number) {
-                     var wordsArray = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
-
-                     var result = number
-                         .toString()
-                         .split('')
-                         .map(function (digit) {
-                             return wordsArray[parseInt(digit)];
-                         })
-                         .join(' ');
-
-                     return result;
-                 }
+                  
                });
                </script>
                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
